@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="css/idangerous.swiper.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+<!--	<script type="text/javascript" src="js/old.js"></script>	
+		<script type="text/javascript" src="js/book.js"></script> 	-->
+<!--	Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
+<!--<script src="js/jquery.path.js"></script>
+<script src="js/jquery-ui.min.js"></script>-->
+<!--	API CCom Interactive -->
+<script src="js/ccom.js"></script>
+<script type="text/javascript" src="js/encart.js"></script>
+<script type="text/javascript" src="js/script1.js"></script>
+<link rel="stylesheet" href="loader.css">
+<script type="text/javascript" src="loader.js"></script>
+  <style>
+/* Demo Styles */
+
+@font-face {
+	font-family: "Lucida Grande";
+	src: url(../img/LucidaGrande.ttc);
+}
+@font-face {
+	font-family: "EccentricStd";
+	src: url(../img/EccentricStd.otf);
+}
+
+@font-face{
+	font-family: "Offside-Regular";
+	src: url(../img/Offside-Regular.ttf);
+}
+
+body {
+	margin: 0;
+	font-family: "Offside-Regular";
+	font-size: 13px;
+}
+.swiper-container {
+    color: #FFFFFF;
+    height: 668px;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 90%;
+	}
+.white-slide {
+	background: #fff;
+}
+.swiper-slide {
+	margin-bottom: 0;
+	width: 100%;
+}
+.pagination {
+	position: absolute;
+	z-index: 100;
+	left: 10px;
+	bottom: 10px;
+}
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #222;
+	margin-right: 5px;
+	opacity: 0.8;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.swiper-visible-switch {
+	background: #aaa;
+}
+.swiper-active-switch {
+	background: #fff;
+}
+.tabs {
+    left: 10%;
+    position: absolute;
+    top: 5%;
+    width: 900px;}
+.tabs a {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    float: left;
+    font-family: offside-regular;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+	}
+.tabs a.active {
+}
+#background img.coinmalin {
+	z-index: -1;
+}
+.colonnetexte {
+	width: 25%;
+	position: absolute;
+	color: #000;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+	z-index: 2;
+}
+.colonnetextefull {
+	width: 94%;
+	position: absolute;
+	color: #000;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+	z-index: 2;
+}
+.colonnetexte2 {
+	width: 25%;
+	position: absolute;
+	color: #000;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+}
+.colonneslide {
+	width: 65%;
+	position: absolute;
+	left: 35%;
+}
+.bonus {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.bonus .swiper-wrapper {
+	width: 65%!important;
+}
+.bonus .swiper-wrapper .swiper-slide {
+	min-height: 100px!important;
+}
+.bonus .swiper-wrapper .swiper-slide img {
+	width: 100%;
+}
+h1 {
+	font-size: 18px;
+	text-align: center;
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+      
+h6 {
+    font-size: 10px;
+    font-weight:300;
+    font-style: italic;
+}      
+.violet {
+    color: #800080;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+	
+	
+.violet.active{
+	background-color:#800080;
+    color:#fff;
+	opacity:1;
+}
+
+.rose {
+    color:#F3C;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+
+
+.rose.active{
+	background-color:#F3C;
+    color:#fff;
+	opacity:1;
+}
+
+.vert {
+    color:#3C9;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+.vert.active{
+	background-color:#3C9;
+    color:#fff;
+	opacity:1;
+}
+
+.orange {
+    color:#F90;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+.orange.active{
+	background-color:#F90;
+    color:#fff;
+	opacity:1;
+}
+
+.texteslide {
+	width: 30%;
+	padding-right: 3%;
+	float: left;
+}
+.imageslide {
+	width: 66%;
+	float: left;
+}
+.imageslide img {
+    border: 1px solid #000;
+    width: 100%;
+	margin-bottom:25px;
+	}
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	  width: 1024px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  height: 768px;
+	
+}
+</style>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+  
+<div id="wrapper">
+	<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
+
+	<div id="background" ><!-- ici seront chargés les background des pages --> 
+    <img id="page" src="resources/couv.jpg" class="coinmalin" /> </div>
+	<div class="tabs"> <a href="#" class="violet">Histoire de l'art</a> <a href="#" class="rose" >Géographie</a> <a href="#" class="vert">Sciences</a> <a href="#" class="orange">Glossaire</a> </div>
+<!--------------------------------------------------------------------------->
+<div class="swiper-container swiper-parent" style="clear:both;">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="violet">Représentations de Médée</h1>
+            <p> Médée n’est pas seulement la fiancée de Jason. C’est un personnage très important qui a intéressé les artistes tout au long des siècles. A la fois princesse et magicienne, parfois gentille, parfois méchante elle est à la fois une jeune fille fragile et une sorcière dangereuse dont il faut se méfier.
+</p>
+            <div class="clear">
+            <div class="texteslide">
+                
+                <p>Médée conduit le char du soleil qui est tiré par des dragons. Vase peint datant du 4ème siècle avant Jésus Christ</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/1-a.jpg" > </div>
+          </div>
+          
+              <div class="clear">
+            <div class="texteslide">
+              
+                <p>“Médée” peinture murale du 1er siècle après JC aux environs de Naples, Italie </p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-d.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-b.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+              <div class="clear">
+            <div class="texteslide">
+               
+                <p>Médée et Jason sur un sarcophage romain du 1er siècle après Jésus Christ, aux alentours de Rome</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-e.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-c.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+             
+                <p>“Médée”, peinture de Eugène Delacroix, 1862</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-f.jpg"> </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-d.jpg" ></div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+            
+                <p>“Médée”, peinture de Frederik Sandys, 1868
+</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-g.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-e.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+            
+                <p>“Médée”, sculpture de Paul Gasq, réalisée en 1896 et exposée au jardin des Tuileries à Paris
+</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-h.jpg" > </div>
+=======
+            <div class="imageslide"><img src="bonus/1-f.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+               
+                <p>“Médée” a fait l’objet de nombreuses adaptations au théâtre. La plus ancienne connue est celle d’Euripide au 5ème siècle avant Jesus Christ. Corneille, en 1635 en a fait une de ses pièces les plus fameuses. Ici, une affiche réalisée par l’artiste Mucha pour le théâtre de la Renaissance avec l’actrice Sarah Bernardt en 1898</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-i.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-g.jpg" ></div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+          
+             <div class="clear">
+            <div class="texteslide">
+                
+                <p>“Médée” est un film de Paolo Pasolini paru en 1970. C’est la célèbre actrice Maria Calas qui joue le rôle de Médée dans un film qui raconte les derniers jours de la magicienne</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-c.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-h.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+             <div class="clear">
+            <div class="texteslide">
+                
+                <p>“Médée” est un film de Paolo Pasolini paru en 1970. C’est la célèbre actrice Maria Calas qui joue le rôle de Médée dans un film qui raconte les derniers jours de la magicienne</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-c.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/1-i.jpg" ></div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                
+                <p>“Médée”, une bande dessinée de Nancy Pena et Blandine Le Callet parue en 2015 aux éditions Casterman. Dans ce récit illustré, c’est Médée elle même qui raconte son histoire.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/1-b-2.jpg" > </div>
+=======
+            <div class="imageslide"> <<img src="bonus/1-j.jpg" ></div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+         
+        
+        
+          
+          
+          
+          
+          </div>
+      </div>
+      </div>
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="rose">Les lieux du récit</h1>
+            <p> Jason et les argonautes voyagent beaucoup. Voyons ensemble par où ils sont passés.</p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Méditerranée</h2>
+                <p> Les grecs sont un peuple de marins. Dans l’antiquité, ils n’habitaient pas seulement la Grèce que nous connaissons de nos jours : ils avaient établi des villes et des colonies sur de nombreuses îles et sur les côtes de la Méditerranée.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-a.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Iolcos</h2>
+                <p> Iolcos n’est pas une ville très connue. En fait, sans Jason et les argonautes, peu de gens en auraient entendu parler. On raconte qu’elle aurait été fondée par Créthée, le fils du dieu du vent Eole. De nos jours, elle compte un peu plus de 2000 habitants.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-b.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Mer Egée</h2>
+                <p> La mer Egée tient son nom du roi Egée dont tu apprendras l’histoire en lisant notre livre “Minos et Thésée”. Elle sépare l’Europe du Moyen Orient et on y trouve beaucoup de petites îles.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-c.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Mer de Marmara</h2>
+                <p>  La mer de Marmara est toute petite mais elle est très importante parce qu’elle relie la mer Méditerrannée et la mer noire. Elle est fermée par le détroit des Dardanelles et le détroit du Bosphore. Quand ils la traversent, Jason et les Argonautes changent de monde.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-d.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Mer Noire</h2>
+                <p> La mer noire est très enclavée dans les terres. Elle borde plusieurs pays d’Europe et du Moyen Orient : Roumanie, Ukraine, Russie, Turquie, etc.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-e.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Colchide</h2>
+                <p> Sur la côte Est de la Mer Noire, se trouve le royaume de Colchide. De nos jours, cette région fait partie de la Géorgie.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/2-f.jpg" > </div>
+          </div>
+            
+          </div>
+      </div>
+      </div>
+    
+    <!--fin du slide--> 
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="vert">Sciences</h1>
+            <p> Pour pêcher, pour voyager ou pour faire du commerce, les hommes ont toujours eu besoin de véhicules qui leur permettent de se déplacer sur l’eau. Mais au fil du temps, les bateaux ont beaucoup évolué. </p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Radeau </h2>
+                <p> Les  premiers bateaux ont simplement été des troncs d’arbre attachés entre eux. Ce sont des radeaux. On en trouve dès la préhistoire. Plus tard, les hommes ont appris à les vider pour créer des pirogues. </p>
+                <h6>©Wikipedia</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/3-a.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Pirogue</h2>
+                <p> Une pirogue est une embarcation fabriquée avec un seul tronc. Elle permet de naviguer sur les rivières ou à proximité des côtes mais est trop petite et instable pour affronter la haute mer. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/3-b.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Bateau à voile</h2>
+                <p> Quand les hommes ont appris à fabriquer des coques de bateau, il est devenu possible de mettre en place un mat avec une voile et d’utiliser le vent pour se déplacer.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/3-c.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Galère </h2>
+                <p> Quand il n’y a pas de vent ou qu’on veut avancer plus vite, alors il faut ramer. C’est ce que font Jason et les Argonautes. Mais souvent, ce sont les condamnés ou les esclaves qui doivent ramer. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/3-d.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Caravelle et Galion </h2>
+                <p>Au Moyen âge, les bateaux s’améliorent. Il leur sera bientôt possible de voyager longtemps jusqu’à aller... en Amérique avec Chrisophe Collomb .</p>
+                <h6>D.R</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/3-f.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/3-e.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Bateau à vapeur</h2>
+                <p> Au 19ème siècle, la vapeur fait son apparition. Les bateaux sont équipés d’une chaudière qui leur permet d’aller plus vite et de ne plus dépendre du vent. 
+
+</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/3-g.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/3-f.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Bateau à moteur</h2>
+                <p> Au 20ème siècle, les moteurs s’améliorent. Le système des hors bord permet à des petits bateaux d’aller très vite. Mais ils polluent et font beaucoup de bruit.</p>
+                <h6>D.R</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/3-h.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/3-g.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Sous marin</h2>
+                <p> Un sous marin est un bateau qui va… sous l’eau. Actuellement, ils sont surtout employés pour des usages militaires ou scientifiques</p>
+                <h6>D.R</h6>
+              </div>
+            <div class="imageslide"> <img src="bonus/3-i.jpg" > </div>
+          </div>
+          
+          </div>
+      </div>
+      </div>
+    
+    <!--fin du slide--> 
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1  class="orange">Les noms des personnages</h1>
+              <p> Il y a beaucoup de noms à retenir pour comprendre les histoires que nous racontons. Le glossaire est là pour te rappeler qui est qui.</p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Aeson</h2>
+                <p> Aeson est le père de Jason et le frère de Pélias.</p>
+               
+              </div>
+            <div class="imageslide"> </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Aiétès</h2>
+                <p>Aiétès est le roi de Colchide. Il est le fils de Hélios, le soleil et le père de Médée. Il a reçu la Toison d’Or en présent. C’est son plus beau trésor et il ne veut pas l’abandonner. </p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide">  </div>
+=======
+            <div class="imageslide"> <img src="bonus/aphrodite.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Argo</h2>
+                <p>  L’Argo est le premier grand navire de la Grèce. C’est de lui que les “argonautes” tirent leur nom.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> </div>
+=======
+            <div class="imageslide"> <img src="bonus/apollon.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Castor et Pollux</h2>
+                <p>  Ce sont des jumeaux, fils de Zeus et de la mortelle Léda. Ils sont nés dans un oeuf, comme leurs deux soeurs, Hélène et Clytemnestre dont nous vous raconteront l’histoire lors de la “Guerre de Troie”.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/castor-pollux.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/athena.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Chiron </h2>
+                <p> Chiron est un centaure, une créature mi homme mi cheval. Il élève Jason ainsi que beaucoup d’autres héros et même des dieux.
+ </p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/chiron.jpg" > </div>
+=======
+            <div class="imageslide">  </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Eole </h2>
+                <p>Eole est le dieu des vents. Certains disent qu’il est le fils de Poséidon, le dieu des mers.
+Harpies : Mi femmes, mi oiseaux, elles sont particulièrement répugnantes.
+</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+           
+=======
+            <div class="imageslide">  </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Eros</h2>
+                <p>Eros est le dieu de l’amour. Parfois il a l’apparence d’un petit garçon, parfois celle d’un jeune homme. Vous lirez son histoire dans notre prochain livre : “Amour et Psyché”</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Héra</h2>
+                <p>Héra est une déesse. C’est l’épouse de Zeus, le roi des dieux.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/hera.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/chiron.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Hercule</h2>
+                <p>Egalement connu sous le nom d’Héraklès, il est le fils de Zeus et le plus fort des héros grecs. Son histoire vous sera racontée dans notre livre “Les douze travaux d’Hercule”.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/hercule.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/eole.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Lemnos </h2>
+                <p>Une île célèbre de la mer Egée</p>
+           
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Orphée</h2>
+                <p>Orphée est le plus grand musicien de toute la Grèce. Son histoire vous est racontée dans notre livre “La naissance des hommes”</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Pélias </h2>
+                <p>Pélias est devenu roi de Iolcos après avoir chassé du trône son frère Aeson./p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Sirènes</h2>
+                <p>Mi femmes, mi poisson ou, selon les versions, mi femmes mi oiseaux. En fait, on en sait rien parce que personne n’a pu les approcher de près : elles dévorent tous les êtres humains qui passent à leur portée. </p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> <img src="bonus/sirenes.jpg" > </div>
+=======
+            <div class="imageslide"> <img src="bonus/hermes.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Thésée </h2>
+                <p> L’histoire de Thésée vous est racontée dans notre livre “Minos et Thésée”. Après ses aventures en Crète, il vagabondera un peu partout et Hercule viendra le délivrer quand il sera enfermé aux enfers.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> </div>
+=======
+            <div class="imageslide"> <img src="bonus/poseidon.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Tirésias</h2>
+                <p>Tirésias est un des plus grands devins de l’antiquité. Au cours de sa vie, il donnera des conseils à de nombreux héros. Même après sa mort, il conservera ses dons et aidera Ulysse à rentrer chez lui.</p>
+                <h6>D.R.</h6>
+              </div>
+<<<<<<< HEAD
+            <div class="imageslide"> < </div>
+=======
+            <div class="imageslide"> <img src="bonus/zeus.jpg" > </div>
+>>>>>>> 697b4a2f2840a4797836574c7ff4c7dc2fdcf1ea
+          </div>
+          
+          </div>
+      </div>
+      </div>
+  </div>
+  </div>
+   <div id="nav">
+    <div id="menu"> <img id="menuImg" src="img/menu.png" alt="menu" /> </div>
+  </div>
+  <div class="popup chapitres">
+        <div class="croixfermeture chapitresfermer"><img src="img/croix.png"  alt=""/></div>
+        <h2>L'histoire</h2>
+       <div class="imageschapitres">  <a href="chapitre1.html"> <img src="resources/menu1.jpg" class=""  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre2.html"> <img src="resources/menu2.jpg"  alt=""/> </a></div>
+           <div class="imageschapitres"><a href="chapitre3.html"> <img src="resources/menu3.jpg"  alt=""/> </a></div>
+         <div class="imageschapitres">  <a href="chapitre4.html"> <img src="resources/menu4.jpg"  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre5.html"> <img src="resources/menu5.jpg"  alt=""/> </a></div>
+        
+            <div class="imageschapitres"> <a href="coinmalin.html"> <img src="resources/menu6.jpg"  alt=""/> </a></div>
+        
+        </div>
+  
+  
+</div>
+<script src="js/jquery-1.10.1.min.js"></script> 
+<script src="js/idangerous.swiper-2.1.min.js"></script> 
+<script>
+  var tabsSwiper = new Swiper('.swiper-container',{
+   
+    speed:500,
+  })
+  $(".tabs a").on('touchstart mousedown',function(e){
+    e.preventDefault()
+    $(".tabs .active").removeClass('active')
+    $(this).addClass('active')
+    tabsSwiper.swipeTo( $(this).index() )
+  })
+  $(".tabs a").click(function(e){
+    e.preventDefault()
+  })
+  
+  var swiperParent = new Swiper('.swiper-parent',{
+  
+    paginationClickable: true,
+    slidesPerView: 1,
+  })
+   var swiperNested1 = new Swiper('.swiper-nested-0',{
+    mode: 'vertical',
+ 
+    paginationClickable: true,
+  slidesPerView: 'auto',
+  })
+  var swiperNested1 = new Swiper('.swiper-nested-1',{
+    mode: 'vertical',
+  
+    paginationClickable: true,
+  slidesPerView: 'auto',
+  })
+  var swiperNested2 = new Swiper('.swiper-nested-2',{
+    mode: 'vertical',
+
+    paginationClickable: true,
+    slidesPerView: 'auto',
+  })
+   var swiperNested2 = new Swiper('.swiper-nested-3',{
+    mode: 'vertical',
+
+    paginationClickable: true,
+    slidesPerView: 'auto',
+  })
+  
+   $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+  </script>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Demo</title>
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" type="text/css" href="css/styleslide.css" />
+<link rel="stylesheet" type="text/css" href="css/a1.css" />
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--	<script type="text/javascript" src="js/old.js"></script>	
+		<script type="text/javascript" src="js/book.js"></script> 	-->
+<!--	Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
+<!--<script src="js/jquery.path.js"></script>
+<script src="js/jquery-ui.min.js"></script>-->
+<!--	API CCom Interactive -->
+<script src="js/ccom.js"></script>
+<script type="text/javascript" src="js/encart.js"></script>
+<script type="text/javascript" src="js/script1.js"></script>
+<link rel="stylesheet" href="loader.css">
+<script type="text/javascript" src="loader.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+<!-- jQuery Plugin -->
+
+</head>
+<body>
+
+<!-- Load chapiter -->
+
+    
+    
+
+  
+
+
+<div class="swiper-container">
+<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
+  <div class="swiper-wrapper chapitre1">
+  
+  <div class="swiper-slide page0" data-hash="slide0">
+  
+      <div id="text">
+      
+   <div id="preloader">
+<div id="textechargement">
+    <center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <font size="5em"  face="EccentricStd">Chapitre 1</font><br />
+        <hr width="20%" size="1px" color="#FE2EC8">
+      La jeunesse de Jason<br />
+    </center>
+    </div>
+    <div id="chargement"></div>
+       <audio id="intro" preload="auto" autoplay type="audio/mpeg">
+              <source src="voix/intro.mp3"  type="audio/mpeg" autoplay="true" >
+            </audio>
+</div>
+       
+          <div class="next"> <img id="next0" src="img/next.png" alt="menu" class="arrow-right" /> </div>
+          
+      </div>
+    </div>
+  
+  
+  
+    <div class="swiper-slide page1" data-hash="slide1">
+  
+      <div id="text">
+      
+        <div id="video1">
+        	<video   width="100%" height="100%" id="videotest1"  loop="true"    >
+  				<source src="resources/a1.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+        <div class="encart ">
+          <div id="lecture">
+          <div id="ecrit" class="ecrit"></div>
+          <div id="son1" class="son">
+          <audio id="voix1"  preload="auto" autostart="false" type="audio/mpeg">
+          <source src="voix/chapitre1.mp3" autostart="false" type="audio/mpeg">
+          </audio>
+          </div>
+            <audio id="bruit1" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a1.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre"><center>Pélias et Eson </center></span>
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+        Tout ceci s’est passé il y a très longtemps, en Grèce, dans une ville appelée Iolcos. À cette époque, les dieux vivaient parmi les hommes et en avaient parfois des enfants. C’est ainsi que le dieu du vent, Éole, eut pour fils Salmoné, qui eut lui-même pour fille Tyro. Tyro épousa Créthée, le roi de la ville d’Iolcos, et lui donna deux fils, deux frères qui ne s’aimaient pas. Ils s’appelaient Pélias et Éson, et c’est avec eux que notre histoire commence.<br>
+Pélias était plus fort et plus méchant. À la mort de leur père, il s’empara du trône d’Iolcos, qui aurait dû revenir à Éson. Craignant le châtiment des dieux, il ne fit pas périr son frère. Mais une prophétie l’avait averti : « Tu seras détrôné par un descendant d’Éole qui se présentera à toi une seule chaussure au pied. » Or Éson avait un fils, un tout petit bébé nommé Jason...
+</div>
+        </div>
+       <div class="prev"> <img id="prev1" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+          <div class="next"> <img id="next1" src="img/next.png" alt="menu" class="arrow-right" /> </div>
+          
+      </div>
+    </div>
+    
+    <!-- Fin page 1-->
+    
+    <div class="swiper-slide page2" data-hash="slide2">
+      <div id="text">
+        <div id="video2">
+        	<video  width="100%" height="100%" id="videotest2"  loop="true"    >
+  				<source src="resources/a2.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+        <div class="encart ">
+          <div id="lecture">
+            <div id="ecrit" class="ecrit"> </div>
+            <div id="son2" class="son">
+              <audio id="voix2" preload="auto" autostart="false" type="audio/mpeg">
+                <source src="voix/chapitre2.mp3" autostart="false" type="audio/mpeg"  >
+              </audio>
+            </div>
+            <audio id="bruit2" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a2.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre"><center>Une enfance dans les montagnes</center></span>
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+Pour protéger son enfant, Éson fit croire qu’il était mort et organisa de fausses funérailles. Mais en cachette, il confia le bébé à son ami le centaure Chiron. Tous deux partirent dans les montagnes, où ils vécurent pendant des années, à l’abri des regards des hommes et de Pélias.<br>
+Chiron s’occupa de Jason comme de son propre fils. Il lui enseigna la musique, la poésie, l’astronomie et l’histoire. Il lui apprit à se battre avec une épée, à lancer le disque et le javelot, à tirer à l’arc, à courir et à lutter. Il lui apprit, surtout, à respecter et à honorer les dieux, quels que fussent leurs arrêts.
+ </div>
+        </div>
+        
+          <div id="bulle2BIG">Prométhée est un titan, fils de Japet qui est lui même fils d’Ouranos, le ciel. Ca en fait le cousin de Zeus, comme vous pourrez l’apprendre dans notre livre “L’origine du monde”.</div>
+
+   <div  id="chouette2"></div>
+       
+          <div class="next"> <img id="next2" src="img/next.png" alt="menu" class="arrow-right" /> </div>
+           <div class="prev"> <img id="prev2" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+      </div>
+    </div>
+    
+    <!-- Fin page 2-->
+    
+    <div class="swiper-slide page3" data-hash="slide3">
+      <div id="text">
+        <div id="video3">
+        	<video  width="100%" height="100%" id="videotest3"  loop="true"    >
+  				<source src="resources/a3.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+        <div class="encart ">
+          <div id="lecture">
+            <div id="ecrit" class="ecrit"> </div>
+            <div id="son3" class="son">
+              <audio id="voix3" preload="auto" autostart="false" type="audio/mpeg">
+                <source src="voix/chapitre3.mp3" autostart="false" type="audio/mpeg"  >
+              </audio>
+            </div>
+            <audio id="bruit3" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a3.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre">Vers Iolcos</span> <br />
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+         Jason eut vingt ans ; il avait fière allure. Il était beau et fort, tout autant que les plus grands héros de la Grèce dont les exploits peuplaient les légendes. Le centaure Chiron lui révéla qu’il était fils de roi et que son père vivait toujours, prisonnier à Iolcos, sous le joug de Pélias. Son devoir sacré lui commandait de partir pour réclamer le trône. Jason se mit en route le jour même.<br>
+Sur la route il croisa une vieille femme, désemparée devant une rivière qu’elle ne parvenait pas à franchir. Jason la hissa sur ses épaules et, alourdi par son fardeau, il perdit une de ses sandales pendant la traversée.<br>
+Il arriva à Iolcos, une des villes les plus grandes et les plus prospères de la Grèce. Il se présenta au roi Pélias. Celui-ci le reconnut avant même qu’il ait donné son nom : ce voyageur chaussé d’une seule sandale ne pouvait être que celui de la prophétie !
+ </div>
+        </div>
+       <span class="bulle bulledroite bulle3a animpage3  pause">Youpi !</span> <span class="bulle bulle3b animpage3  pause">Ca va mieux</span> <span class="bulle bulledroite bulle3c animpage3  pause">Je n'ai plus froid.</span>
+        <div class="next"> <img id="next3" src="img/next.png" alt="menu" class="arrow-right" /> </div>
+         <div class="prev"> <img id="prev3" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+      </div>
+    </div>
+    
+    <!-- Fin page 3-->
+    
+    <div class="swiper-slide page4" data-hash="slide4" id="slide4">
+      <div id="text">
+        <div id="video4">
+        	<video  width="100%" height="100%" id="videotest4"  loop="true"    >
+  				<source src="resources/a4.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+
+        <div class="encart encartbig ">
+          <div id="lecture">
+            <div id="ecrit" class="ecrit"> </div>
+            <div id="son4" class="son">
+              <audio id="voix4" preload="auto" autostart="false" type="audio/mpeg">
+                <source src="voix/chapitre4.mp3" autostart="false" type="audio/mpeg"  >
+              </audio>
+            </div>
+            <audio id="bruit4" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a4.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre">La toison d'or</span> <br />
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+         Pélias ne voulait pas céder sa place, mais il ne pouvait pas non plus s’opposer à la volonté des dieux. Alors il réfléchit. Il avait beaucoup voyagé dans sa jeunesse et il connaissait beaucoup de légendes. Il se souvint d’une veille histoire dont il pourrait se servir pour conserver son royaume...<br>
+	« Je te rendrai le trône, Jason, si tu vas en Colchide et que tu m’en rapportes la Toison d’or. »<br>
+Jason accepta le défi. Mais quand il quitta le roi Pélias, il fut saisi d’une grande inquiétude ; car comment un jeune homme seul et sans appui pourrait-il espérer aller si loin et braver tant de périls ?<br>
+La vieille femme qu’il avait aidée attendait Jason à la sortie du palais. Elle n’était autre que la déesse Héra, l’épouse de Zeus, le roi des dieux, et elle avait pris l’apparence d’une simple mortelle pour l’éprouver. Jason avait fait preuve de pitié en l’aidant à traverser un cours d’eau dangereux et avait gagné son affection : elle l’aiderait pendant ses aventures.
+</div>
+        </div>
+          <div id="bulle4BIG">Ce fils de Zeus, qui délivrera Prométhée, c’est Héraklès, le plus grand des héros grec, celui qui accomplira les fameux douze travaux.</div>
+
+   <div  id="chouette4"></div>
+  
+         <div class="prev"> <img id="prev4" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+        <div class="next"> <img id="next4" src="img/next.png" alt="menu" /></div>
+      </div>
+    </div>
+    
+    <!-- Fin page 4--> 
+    
+   <div class="swiper-slide page4" data-hash="slide4" id="slide4">
+      <div id="text">
+        <div id="video5">
+        	<video  width="100%" height="100%" id="videotest5"  loop="true"    >
+  				<source src="resources/a5.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+
+        <div class="encart ">
+          <div id="lecture">
+            <div id="ecrit" class="ecrit"> </div>
+            <div id="son5" class="son">
+              <audio id="voix5" preload="auto" autostart="false" type="audio/mpeg">
+                <source src="voix/chapitre5.mp3" autostart="false" type="audio/mpeg"  >
+              </audio>
+            </div>
+            <audio id="bruit5" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a5.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre">L'Argo</span> <br />
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+     « Construis un grand bateau, lui conseilla-t-elle. Tu le baptiseras « l’Argo ». Puis appelle à ton secours les plus grands héros de la Grèce. Ils t’accompagneront dans ton voyage, car tous sont friands de gloire et d’aventures. Quand vous serez réunis, aucun ennemi, aucun monstre, aucune épreuve ne pourra vous résister. »<br>
+Et en effet, de nombreux héros répondirent à l’appel de Jason. Jamais en Grèce on avait vu un tel rassemblement pour une aventure aussi folle ! Ils seraient les navigateurs de l’Argo ; on les appellerait « les Argonautes ».
+</div>
+        </div>
+          <div id="bulle4BIG">Ce fils de Zeus, qui délivrera Prométhée, c’est Héraklès, le plus grand des héros grec, celui qui accomplira les fameux douze travaux.</div>
+
+   <div  id="chouette4"></div>
+  
+         <div class="prev"> <img id="prev5" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+        <div class="next"> <img id="next5" src="img/next.png" alt="menu" /> </div>
+      </div>
+    </div>
+    
+    <!-- Fin page 5--> 
+    
+      <div class="swiper-slide page4" data-hash="slide4" id="slide4">
+      <div id="text">
+        <div id="video6">
+        	<video  width="100%" height="100%" id="videotest6"  loop="true"    >
+  				<source src="resources/a6.mp4" type="video/mp4"   />
+ 
+			</video>
+      	</div>
+
+        <div class="encart encartbig">
+          <div id="lecture">
+            <div id="ecrit" class="ecrit"> </div>
+            <div id="son6" class="son">
+              <audio id="voix6" preload="auto" autostart="false" type="audio/mpeg">
+                <source src="voix/chapitre6.mp3" autostart="false" type="audio/mpeg"  >
+              </audio>
+            </div>
+            <audio id="bruit6" preload="auto" autostart="false" type="audio/mpeg">
+              <source src="son/a6.mp3" autostart="false" type="audio/mpeg"  >
+            </audio>
+          </div>
+          <div class="texte"> <span class="titre">Les argonautes</span> <br />
+            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
+Le plus fort d’entre tous était Héraclès, connu aussi sous le nom d’Hercule. Ce fils de Zeus avait décidé d’interrompre ses douze travaux le temps d’accompagner l’Argo. Il monta à bord avec son compagnon, Hylas.<br />
+Tirésias embarqua ensuite. Dans sa jeunesse, il avait surpris la déesse Athéna prenant son bain et, courroucée, celle-ci lui avait ôté la vue. Mais en perdant l’usage de ses yeux, Tirésias était devenu devin : il avait appris à prédire l’avenir.<br />
+Vint ensuite le poète Orphée, le plus grand musicien de tous les temps. Puis les deux frères Calaïs et Zétès, les fils du Vent du Nord, pourvus d’ailes comme des oiseaux. Puis encore Thésée, qui revenait de Crète, où il avait vaincu le Minotaure. Et Typhis, qui serait le pilote, ainsi que les jumeaux Castor et Pollux, fils de Zeus, comme Hercule, et de la mortelle Léda.<br />
+Il y avait encore beaucoup d’autres héros, notamment Pelée, Télamon, Oïlée et Laërte. Leurs fils, bien des années plus tard, participeront à une autre expédition, plus grande encore. Ce sera la guerre de Troie, une toute autre histoire…
+</div>
+        </div>
+          <div id="bulle4BIG">Ce fils de Zeus, qui délivrera Prométhée, c’est Héraklès, le plus grand des héros grec, celui qui accomplira les fameux douze travaux.</div>
+
+   <div  id="chouette4"></div>
+  
+         <div class="prev"> <img id="prev6" src="img/prev.png" alt="menu" class="arrow-left" /></div>
+        <div class="next"> <a href="chapitre2.html"><img id="next6" src="img/next.png" alt="menu" /></a> </div>
+      </div>
+    </div>
+    
+    <!-- Fin page 6--> 
+    
+    
+    
+  </div>
+  <div class="pagination"></div>
+  <div id="nav">
+    <div id="menu"> <img id="menuImg" src="img/menu.png" alt="menu" /> </div>
+  </div>
+     <div class="popup chapitres">
+        <div class="croixfermeture chapitresfermer"><img src="img/croix.png"  alt=""/></div>
+        <h2>L'histoire</h2>
+       <div class="imageschapitres">  <a href="chapitre1.html"> <img src="resources/menu1.jpg" class=""  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre2.html"> <img src="resources/menu2.jpg"  alt=""/> </a></div>
+           <div class="imageschapitres"><a href="chapitre3.html"> <img src="resources/menu3.jpg"  alt=""/> </a></div>
+         <div class="imageschapitres">  <a href="chapitre4.html"> <img src="resources/menu4.jpg"  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre5.html"> <img src="resources/menu5.jpg"  alt=""/> </a></div>
+        
+            <div class="imageschapitres"> <a href="coinmalin.html"> <img src="resources/menu6.jpg"  alt=""/> </a></div>
+        
+        </div>
+</div>
+<script src="js/idangerous.swiper-2.1.min.js"></script> 
+<script src="js/idangerous.swiper.hashnav-1.0.js"></script> 
+<script>
+$("#menu").click(function (){
+          $(".chapitres").toggleClass("visible");
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+          $(".chapitres").toggleClass("visible");
+          });
+
+	$('#next0').click(function(){
+		$(".animpage1").removeClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-100%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+	
+	$('#bruit1').playMedia();
+		$('#voix1').playMedia();
+	
+$("#chargement").addClass("pause");
+		   	   $('#intro')[0].pause();
+    				$('#intro')[0].currentTime = 0;
+		   	   
+	   var video1 = $('#videotest1');
+           video1[0].play();	  
+           return false;
+	
+	
+
+	
+});
+ 
+  	$('#next1').click(function(){
+		
+	$(".animpage1").addClass( "pause" );
+	$(".animpage2").removeClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-200%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		
+		
+		$('#bruit2').playMedia();
+		$('#voix2').playMedia();
+			$('#bruit1').pauseMedia();
+		$('#voix1').pauseMedia();
+		   	   
+	   var video1 = $('#videotest1');
+	    var video2 = $('#videotest2');
+       video1[0].pause(); 	
+           video2[0].play();	  
+           return false;
+
+	
+});
+
+
+$('#next2').click(function(){
+	$(".animpage2").addClass( "pause" );
+	$(".animpage3").removeClass( "pause" );
+	
+	$( ".swiper-wrapper" ).animate({
+  
+    left: "-300%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+	
+		$('#bruit3').playMedia();
+		$('#voix3').playMedia();
+			$('#bruit2').pauseMedia();
+		$('#voix2').pauseMedia();
+		
+		  var video2 = $('#videotest2');
+	    var video3 = $('#videotest3');
+       video2[0].pause(); 	
+           video3[0].play();	  
+           return false;
+	   
+		
+	
+	
+});
+
+
+$('#next3').click(function(){
+	$(".animpage3").addClass( "pause" );
+	$(".animpage4").removeClass( "pause" );
+	$( ".swiper-wrapper" ).animate({
+  
+    left: "-400%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit4').playMedia();
+		$('#voix4').playMedia();
+			$('#bruit3').pauseMedia();
+		$('#voix3').pauseMedia();
+		   
+		     var video3 = $('#videotest3');
+	    var video4 = $('#videotest4');
+       video3[0].pause(); 	
+           video4[0].play();	  
+           return false;
+	
+});
+
+$('#next4').click(function(){
+	$(".animpage4").addClass( "pause" );
+	$(".animpage5").removeClass( "pause" );
+	$( ".swiper-wrapper" ).animate({
+  
+    left: "-500%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit5').playMedia();
+		$('#voix5').playMedia();
+			$('#bruit4').pauseMedia();
+		$('#voix4').pauseMedia();
+		   
+		     var video4 = $('#videotest4');
+	    var video5 = $('#videotest5');
+       video4[0].pause(); 	
+           video5[0].play();	  
+           return false;
+	
+});
+
+$('#next5').click(function(){
+	$(".animpage5").addClass( "pause" );
+	$(".animpage6").removeClass( "pause" );
+	$( ".swiper-wrapper" ).animate({
+  
+    left: "-600%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit6').playMedia();
+		$('#voix6').playMedia();
+			$('#bruit5').pauseMedia();
+		$('#voix5').pauseMedia();
+		   
+		     var video5 = $('#videotest5');
+	    var video6 = $('#videotest6');
+       video5[0].pause(); 	
+           video6[0].play();	  
+           return false;
+	
+});
+
+$('#prev1').click(function(){
+	$(".animpage1").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+    left: "0%",
+  }, 500, function() {
+    // Animation complete.
+  });
+			$('#bruit1').pauseMedia();
+		$('#voix1').pauseMedia();
+		   
+		   var video1 = $('#videotest1');
+	         	
+           video1[0].pause();
+		 	  
+           return false;
+});
+
+
+
+$('#prev2').click(function(){
+	$(".animpage1").removeClass( "pause" );
+	$(".animpage2").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-100%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+	
+		$('#bruit1').playMedia();
+		$('#voix1').playMedia();
+			$('#bruit2').pauseMedia();
+		$('#voix2').pauseMedia();
+		   
+		   var video1 = $('#videotest1');
+	    var video2 = $('#videotest2');
+        	
+           video1[0].play();
+		   video2[0].pause();	  
+           return false;
+	
+
+	
+});
+
+
+$('#prev3').click(function(){
+		$(".animpage2").removeClass( "pause" );
+	$(".animpage3").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-200%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+	
+		$('#bruit2').playMedia();
+		$('#voix2').playMedia();
+			$('#bruit3').pauseMedia();
+		$('#voix3').pauseMedia();
+		   
+		    var video2 = $('#videotest2');
+	    var video3 = $('#videotest3');
+        	
+           video2[0].play();
+		   video3[0].pause();	  
+           return false;
+	
+
+
+	
+});
+
+
+$('#prev4').click(function(){
+	$(".animpage3").removeClass( "pause" );
+	$(".animpage4").addClass( "pause" );
+	
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-300%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit3').playMedia();
+		$('#voix3').playMedia();
+			$('#bruit4').pauseMedia();
+		$('#voix4').pauseMedia();
+		   
+		    var video3 = $('#videotest3');
+	    var video4 = $('#videotest4');
+        	
+           video3[0].play();
+		   video4[0].pause();	  
+           return false;
+
+});
+
+$('#prev5').click(function(){
+	$(".animpage4").removeClass( "pause" );
+	$(".animpage5").addClass( "pause" );
+	
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-400%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit4').playMedia();
+		$('#voix4').playMedia();
+			$('#bruit5').pauseMedia();
+		$('#voix5').pauseMedia();
+		   
+		    var video4 = $('#videotest4');
+	    var video5 = $('#videotest5');
+        	
+           video4[0].play();
+		   video5[0].pause();	  
+           return false;
+
+});
+
+$('#prev6').click(function(){
+	$(".animpage5").removeClass( "pause" );
+	$(".animpage6").addClass( "pause" );
+	
+		$( ".swiper-wrapper" ).animate({
+  
+    left: "-500%",
+
+  }, 500, function() {
+    // Animation complete.
+  });
+		$('#bruit5').playMedia();
+		$('#voix5').playMedia();
+			$('#bruit6').pauseMedia();
+		$('#voix6').pauseMedia();
+		   
+		    var video5 = $('#videotest5');
+	    var video6 = $('#videotest6');
+        	
+           video5[0].play();
+		   video6[0].pause();	  
+           return false;
+
+});
+
+  	$play1 = true;
+	  	$play2 = true;
+	  	$play3 = true;
+	  	$play4 = true;
+			$play5 = true;
+	  	$play6 = true;
+		
+		$('#son1').click(function() {
+			$("#son1").toggleClass("sonhover");
+			if ($play1) {
+		        $('#voix1').pauseMedia();
+		        $play1 = false;
+			}
+			else {
+				$('#voix1').playMedia();
+				$play1 = true;
+			}
+        });
+		$('#son2').click(function() {
+			$("#son2").toggleClass("sonhover");
+			if ($play2) {
+		        $('#voix2').pauseMedia();
+		        $play2 = false;
+			}
+			else {
+				$('#voix2').playMedia();
+				$play2 = true;
+			}
+        });
+		$('#son3').click(function() {
+			$("#son3").toggleClass("sonhover");
+			if ($play3) {
+		        $('#voix3').pauseMedia();
+		        $play3 = false;
+			}
+			else {
+				$('#voix3').playMedia();
+				$play3 = true;
+			}
+        });
+		$('#son4').click(function() {
+			$("#son4").toggleClass("sonhover");
+			if ($play4) {
+		        $('#voix4').pauseMedia();
+		        $play4 = false;
+			}
+			else {
+				$('#voix4').playMedia();
+				$play4 = true;
+			}
+        });
+		
+		$('#son5').click(function() {
+			$("#son5").toggleClass("sonhover");
+			if ($play5) {
+		        $('#voix5').pauseMedia();
+		        $play5 = false;
+			}
+			else {
+				$('#voix5').playMedia();
+				$play5 = true;
+			}
+        });
+		$('#son6').click(function() {
+			$("#son6").toggleClass("sonhover");
+			if ($play6) {
+		        $('#voix6').pauseMedia();
+		        $play6 = false;
+			}
+			else {
+				$('#voix6').playMedia();
+				$play6 = true;
+			}
+        });
+	
+	    $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+  </script> 
+<script src="js/encart.js"></script>
+<script src="js/loading.js"></script> 
+
+<!-- Preloader -->
+
+</body>
+</html>
