@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.phonegap.example"
@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>La naissance des hommes</name>
+    <name>Jason et les argonautes</name>
 
     <description>
-        Les débuts de l’humanité : de la création de l'homme aux premières cités en passant par le vol du feu et la malédiction de Pandora.
+        Comment Jason rassembla les plus fameux héros de la Grèce pour conquérir la toison d'or... et le coeur de Médée.
     </description>
 
  <author href="http://www.oracle-editions.com/" email="fvermorel@gmail.com">
